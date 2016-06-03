@@ -63,20 +63,22 @@ BacklogSortableDirective = ($repo, $rs, $rootscope, $tgConfirm, $translate) ->
                     if !$(item).hasClass('row')
                         return false
 
-                    # it doesn't move is the filter is open
-                    parent = $(item).parent()
-                    initIsBacklog = parent.hasClass('backlog-table-body')
-
-                    if initIsBacklog && $el.hasClass("active-filters")
-                        filterError()
-                        return false
-
                     return true
             })
 
             drake.on 'drag', (item, container) ->
+                # it doesn't move is the filter is open
                 parent = $(item).parent()
                 initIsBacklog = parent.hasClass('backlog-table-body')
+
+                if initIsBacklog && $el.hasClass("active-filters")
+                    filterError()
+
+                    setTimeout (() ->
+                        drake.cancel(true)
+                    ), 0
+
+                    return false
 
                 $(document.body).addClass("drag-active")
 
@@ -88,6 +90,12 @@ BacklogSortableDirective = ($repo, $rs, $rootscope, $tgConfirm, $translate) ->
                 $(item).addClass('backlog-us-mirror')
 
             drake.on 'dragend', (item) ->
+                parent = $(item).parent()
+
+                return false if parent.hasClass('active-filters')
+
+                initIsBacklog = parent.hasClass('backlog-table-body')
+
                 $('.doom-line').remove()
 
                 parent = $(item).parent()
