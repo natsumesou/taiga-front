@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "Luo projekti",
             "HELP_TITLE": "Taiga Tukisivusto",
             "HELP": "Ohjeet",
-            "HOMEPAGE": "Etusivu",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "Lähetä palautetta",
             "FEEDBACK": "Palaute",
             "NOTIFICATIONS_TITLE": "Muokkaa ilmoitusasetuksiasi",

@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "プロジェクトを作成",
             "HELP_TITLE": "Taiga サポートページ",
             "HELP": "ヘルプ",
-            "HOMEPAGE": "ホームページ",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "フィードバックを送る",
             "FEEDBACK": "フィードバック",
             "NOTIFICATIONS_TITLE": "通知設定を編集",

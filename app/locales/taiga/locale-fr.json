@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "Créer un projet",
             "HELP_TITLE": "Page d'assistance Taiga",
             "HELP": "Aide",
-            "HOMEPAGE": "Page d'accueil",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "Envoyez vos commentaires",
             "FEEDBACK": "Feedback",
             "NOTIFICATIONS_TITLE": "Modifier vos réglages de notification",

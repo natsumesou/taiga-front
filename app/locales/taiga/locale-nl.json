@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "Project aanmaken",
             "HELP_TITLE": "Taiga support pagina",
             "HELP": "Help",
-            "HOMEPAGE": "Homepage",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "Stuur feedback",
             "FEEDBACK": "Feedback",
             "NOTIFICATIONS_TITLE": "Notificatie instellingen bewerken",

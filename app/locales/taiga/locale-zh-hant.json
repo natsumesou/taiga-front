@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "創建專案",
             "HELP_TITLE": "Taiga支援頁",
             "HELP": "幫助",
-            "HOMEPAGE": "首頁",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "送出回饋 ",
             "FEEDBACK": "回饋 ",
             "NOTIFICATIONS_TITLE": "編輯個人通知設定",

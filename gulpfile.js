@@ -54,6 +54,7 @@ paths.distVersion = paths.dist + version + "/";
 paths.tmp = "tmp/";
 paths.extras = "extras/";
 paths.modules = "node_modules/";
+paths.appVersion = "version";
 
 paths.jade = [
     paths.app + "**/*.jade"
@@ -495,6 +496,8 @@ gulp.task("app-loader", function() {
 });
 
 gulp.task("locales", function() {
+    var appVersion = fs.readFileSync(paths.appVersion, "utf-8").replace("\n", "");
+
     var plugins = gulp.src(paths.app + "modules/**/locales/*.json")
         .pipe(rename(function (localeFile) {
             // rename app/modules/compiles-modules/tg-contrib/locales/locale-en.json
@@ -509,6 +512,7 @@ gulp.task("locales", function() {
     var core = gulp.src(paths.locales);
 
     return mergeStream(plugins, core)
+            .pipe(replace("___APP_VERSION___", appVersion))
             .pipe(gulpif(isDeploy, jsonminify()))
             .pipe(gulp.dest(paths.distVersion + "locales"));
 });

@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "프로젝트 생성하기",
             "HELP_TITLE": "타이가 고객 지원 페이지",
             "HELP": "도움말",
-            "HOMEPAGE": "홈페이지",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "피드백 보내기",
             "FEEDBACK": "피드백",
             "NOTIFICATIONS_TITLE": "알림 설정 수정",

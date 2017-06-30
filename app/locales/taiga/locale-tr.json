@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "Proje oluştur",
             "HELP_TITLE": "Taiga Destek Sayfası",
             "HELP": "Yardım",
-            "HOMEPAGE": "Ana sayfa",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "Geribildirim Gönder",
             "FEEDBACK": "Geribildirim",
             "NOTIFICATIONS_TITLE": "Bildirim ayarlarını düzenle",

@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "Opprett prosjekt",
             "HELP_TITLE": "Taiga Brukerstøtte",
             "HELP": "Hjelp",
-            "HOMEPAGE": "Hjemmeside",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "Gi tilbakemelding",
             "FEEDBACK": "Tilbakemelding",
             "NOTIFICATIONS_TITLE": "Endre dine varslingsinstillinger",

@@ -827,7 +827,7 @@
             "TITLE_CREATE_PROJECT": "创建项目",
             "HELP_TITLE": "Taiga支持页",
             "HELP": "帮助",
-            "HOMEPAGE": "主页",
+            "HOMEPAGE": "Taiga ___APP_VERSION___",
             "FEEDBACK_TITLE": "发送反馈",
             "FEEDBACK": "反馈",
             "NOTIFICATIONS_TITLE": "编辑个人通知设定",
