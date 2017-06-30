@@ -90,3 +90,11 @@ describe "tgWikiHistoryService", ->
         expect(wikiHistoryService.historyEntries.size).to.be.equal(3)
         wikiHistoryService.setWikiId(wikiId)
         expect(wikiHistoryService.historyEntries.size).to.be.equal(0)
+
+    it "toggle history visibility", () ->
+        wikiHistoryService._historyEntriesVisible = false
+        wikiHistoryService.regenerate = sinon.spy()
+        wikiHistoryService.toggleHistoryEntriesVisible()
+
+        expect(wikiHistoryService.historyEntriesVisible).to.be.true
+        expect(wikiHistoryService.regenerate).to.be.calledOnce

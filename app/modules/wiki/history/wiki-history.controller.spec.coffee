@@ -60,3 +60,11 @@ describe "WikiHistorySection", ->
 
         expect(mocks.tgWikiHistoryService.setWikiId).to.not.be.calledOnce
         expect(mocks.tgWikiHistoryService.loadHistoryEntries).to.be.calledOnce
+
+    it "toggle whistory visibility", () ->
+        mocks.tgWikiHistoryService.toggleHistoryEntriesVisible = sinon.spy()
+
+        historyCtrl = controller "WikiHistoryCtrl"
+        historyCtrl.toggleHistoryEntriesVisible()
+
+        expect(mocks.tgWikiHistoryService.toggleHistoryEntriesVisible).to.be.calledOnce

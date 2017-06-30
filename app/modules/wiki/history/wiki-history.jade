@@ -6,7 +6,23 @@ nav.history-tabs(ng-if="vm.historyEntries.count()>0")
     )
 
 section.wiki-history(ng-if="vm.historyEntries.count()>0")
+    a.show-activities(
+      href=""
+      title="{{'ACTIVITY.SHOW_ACTIVITIES' | translate}}",
+      ng-if="vm.historyEntries.count()>0",
+      ng-click="vm.toggleHistoryEntriesVisible()"
+    )
+        span.text(
+          ng-show="!vm.historyEntriesVisible"
+          translate="ACTIVITY.SHOW_ACTIVITIES"
+          translate-values="{counter: '{{vm.historyEntries.count()}}'}"
+        )
+        span.text(
+          ng-show="vm.historyEntriesVisible"
+          translate="ACTIVITY.HIDE_ACTIVITIES"
+          translate-values="{counter: '{{vm.historyEntries.count()}}'}"
+        )
     tg-wiki-history-entry.wiki-history-entry(
-        tg-repeat="historyEntry in vm.historyEntries"
+        tg-repeat="historyEntry in vm.visibleHistoryEntries"
         history-entry="historyEntry"
     )

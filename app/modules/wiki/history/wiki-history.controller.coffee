@@ -28,11 +28,16 @@ class WikiHistoryController
 
     constructor: (@wikiHistoryService) ->
         taiga.defineImmutableProperty @, 'historyEntries', () => return @wikiHistoryService.historyEntries
+        taiga.defineImmutableProperty @, 'visibleHistoryEntries', () => return @wikiHistoryService.visibleHistoryEntries
+        taiga.defineImmutableProperty @, 'historyEntriesVisible', () => return @wikiHistoryService.historyEntriesVisible
 
     initializeHistoryEntries: (wikiId) ->
         if wikiId
             @wikiHistoryService.setWikiId(wikiId)
 
         @wikiHistoryService.loadHistoryEntries()
+
+    toggleHistoryEntriesVisible: () ->
+        @wikiHistoryService.toggleHistoryEntriesVisible()
 
 module.controller("WikiHistoryCtrl", WikiHistoryController)

@@ -1201,7 +1201,9 @@
             "ASSIGNED_TO": "assigned to",
             "MILESTONE": "sprint",
             "COLOR": "color"
-        }
+        },
+        "SHOW_ACTIVITIES": "Show activity ({{ counter }} entries)",
+        "HIDE_ACTIVITIES": "Hide activity ({{ counter }} entries)"
     },
     "BACKLOG": {
         "PAGE_TITLE": "Backlog - {{projectName}}",
